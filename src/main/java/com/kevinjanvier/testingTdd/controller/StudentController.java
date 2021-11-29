@@ -1,5 +1,7 @@
-package com.kevinjanvier.testingTdd;
+package com.kevinjanvier.testingTdd.controller;
 
+import com.kevinjanvier.testingTdd.Student;
+import com.kevinjanvier.testingTdd.StudentNotFoundException;
 import com.kevinjanvier.testingTdd.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,6 +21,5 @@ public class StudentController {
     @ExceptionHandler
     @ResponseStatus(HttpStatus.NOT_FOUND)
     void studentNotFoundException(StudentNotFoundException foundException){
-
     }
 }
