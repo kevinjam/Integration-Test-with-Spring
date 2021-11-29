@@ -29,7 +29,7 @@ public class StudentCacheTest {
     void getStudentByIdForMultipleRequests() {
 
         //given
-        Long id = 123l;
+        Long id = 123L;
         given(studentRepository.findById(id))
                 .willReturn(Optional.of(new Student(null,"Mark")));
 

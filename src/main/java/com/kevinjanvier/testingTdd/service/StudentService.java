@@ -1,6 +1,7 @@
 package com.kevinjanvier.testingTdd.service;
 
 import com.kevinjanvier.testingTdd.Student;
+import com.kevinjanvier.testingTdd.StudentNotFoundException;
 import com.kevinjanvier.testingTdd.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
@@ -15,6 +16,6 @@ public class StudentService {
 
     @Cacheable("students")
     public Student getStudentById(Long id) {
-        return studentRepository.findById(id).orElse(null);
+        return studentRepository.findById(id).orElseThrow(()->new StudentNotFoundException());
     }
 }
