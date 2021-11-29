@@ -1,6 +1,6 @@
-package com.kevinjanvier.testingTdd;
+package com.kevinjanvier.student;
 
-import com.kevinjanvier.testingTdd.service.StudentService;
+import com.kevinjanvier.student.service.StudentService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

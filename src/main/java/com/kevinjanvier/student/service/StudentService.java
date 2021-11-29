@@ -1,8 +1,8 @@
-package com.kevinjanvier.testingTdd.service;
+package com.kevinjanvier.student.service;
 
-import com.kevinjanvier.testingTdd.Student;
-import com.kevinjanvier.testingTdd.StudentNotFoundException;
-import com.kevinjanvier.testingTdd.StudentRepository;
+import com.kevinjanvier.student.Student;
+import com.kevinjanvier.student.StudentNotFoundException;
+import com.kevinjanvier.student.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;

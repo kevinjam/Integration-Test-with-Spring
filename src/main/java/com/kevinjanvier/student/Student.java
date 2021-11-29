@@ -1,4 +1,4 @@
-package com.kevinjanvier.testingTdd;
+package com.kevinjanvier.student;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
