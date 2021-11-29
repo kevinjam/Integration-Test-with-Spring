@@ -23,8 +23,8 @@ public class StudentServiceTest {
     private StudentService studentService;
 
     @Test
-    @DisplayName("returningSavedStudentfromService")
-    void returningSavedStudentfromService() {
+    @DisplayName("returningSavedStudentFromService")
+    void returningSavedStudentFromService() {
 
         Student savedStudent = studentRepository.save(new Student(null, "Mark"));
 
@@ -45,7 +45,7 @@ public class StudentServiceTest {
         //when
         Throwable throwable =catchThrowable(() ->studentService.getStudentById(id));
 
-        //tehn
+        //then
         BDDAssertions.then(throwable).isInstanceOf(StudentNotFoundException.class);
         
     }
